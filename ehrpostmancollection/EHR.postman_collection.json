@@ -1,0 +1,1419 @@
+{
+	"info": {
+		"_postman_id": "4734c8e0-d3e3-4aa4-b8a8-3127d1e1c4b7",
+		"name": "EHR",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41180238",
+		"_collection_link": "https://api-testing-for-demo.postman.co/workspace/API-TESTING-FOR-DEMO-Workspace~59284686-e87a-4861-88ef-e34aeb599d83/collection/41180238-4734c8e0-d3e3-4aa4-b8a8-3127d1e1c4b7?action=share&source=collection_link&creator=41180238"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/api/register",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Dr. Alice Smith\",\r\n    \"email\": \"alice@example.com\",\r\n    \"password\": \"password\",\r\n    \"password_confirmation\": \"password\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/login Copy",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": " application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": " application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"alice@example.com\",\r\n    \"password\": \"password\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/patients Copy",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIwMTk2YTAyNC1lZTczLTczYjAtYTk4Mi1jZjljYTQzNzRjNGQiLCJqdGkiOiJlNjU5NzJjOTE0MjZlZTQyMWVmZWRmYzI5ZmY3YTM3YmE2MjYxMzNiOTIwMDg2NDRjYTA1MjU1ZjE0NWEwN2I1Njg0NjMyMjIwYTJjNjgwZCIsImlhdCI6MTc0NjQ0NDU2Mi41MDg4OTQsIm5iZiI6MTc0NjQ0NDU2Mi41MDg4OTcsImV4cCI6MTc3Nzk4MDU2Mi4zMDg5ODEsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.e2ZAoxK9rSarFpfrnIIYeYWF2A_PHUywIABAWbXBYcpjxsfO-F5YwlF9opfdG6vcFWoPVvceY5W3bGDiiGRK4kNhFOxw1jsYSwuiq_WZ1P4gFsMwtb3TnQR0X9ssQBB7xI2yI5hVrGxGysIkTLqZFOwS5aD8fdbr0_eESOj4cs6lwSAbmEvn_0R8KInlyuXHowch-Z3tVtoowQ9AbMW25EsRI8N9EgKBEXODXJMLF3I-aq65T0-r_yCPg8roN3xagrLoEY5CW8oNIzySA3wgzfR5MEO5YYl8YP8RdE4MX58lmJRQXceC0I1c9soNMchlp9zMrMhanQmUeu3o4t53GzsjJtMUnLIVn6t66ePleLHZpNel-iuPdspyodxGD4zHvOH4CiytBgD5HWeFk-d3l5dXYfcpPhKm9UST__JiA_i1z8WWExVc8UTJBO4jm0NSQVleAwTjOSaUqNFxad375ieHC8aCUPG8_N0rq7nKdPPxrIjTgCMXQwO2fMr6Cyf4UEniTv_q7b1glJsDnT4QBZuO4GsoZ6W11tFaOpmsUt3cU54kT8G8zg6ol8TwOHS9Iou-4N43k7kNSGRYn2NMXiT_skmrhjXjTNo_JxyEMDVRJnCkR14ek1aNaH0eHyDEf8HYwExEwVAQ138zIea2MhkbGMdRzAl1L9DEprv09mU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"John Doe\",\r\n    \"dob\": \"1990-05-15\",\r\n    \"contact_info\": \"john.doe@email.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/patients",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"patients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/medications Copy",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIwMTk2YTAyNC1lZTczLTczYjAtYTk4Mi1jZjljYTQzNzRjNGQiLCJqdGkiOiJlYTU1ODEzOWZmZDc4NGNmMmE5MDMzNDNjZjY3YTI2M2YxY2Q5NjllZTBkN2EyN2ZkMDg1OWE0ZjZmNTYwODU2YTJkZTNkNjc1MTQ4M2RkMCIsImlhdCI6MTc0NjQ0NjI0Ni4xNTYyMDcsIm5iZiI6MTc0NjQ0NjI0Ni4xNTYyMDksImV4cCI6MTc3Nzk4MjI0Ni4xNDk1NDQsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.b2MvwI43JqT0BlH5jnJQ5xdM1x_3dcLPzd_LPLhPAiF7t5EV0J9isyacAJilWiysnziVpODmNERQHAN8DY6iXtZ-WFRtgwegb89vAtWLi13opvrTo4me51VoLOkQfPHLyb6i3CPcohv8SiZvOPXfmFTZu-57QZW3iN7CQ9baEa3EyGuJ4F14aGl6Xry98C1i8Dr3titkhaPWSikOglIbXJHt2uSDdO8bhQ_LWUiUeI3nFOrS_c0dl06UAHZMIDluekBe5l0it08yw72REX2q9-vYnaWsL2Bv1a4D2HJ0O9PwuKca_60EHbFF7msIo_LxzT_U4fKXjXvDwE_SAoVFQayXLnB9zThna1UwB0XzLhpTG-Q5HT5DKYFnGv2Hzkt7G16iwpL3IXMr-T8vpYto_54YDSqyH4qRpfdDqwUcPor2f3ajuS25PnXmPqRlEErgVm3fzrL4XsTLKZqQ-cFUulPQTvaE_nmz-K42LgGgLisBh-W65cAZq0M-F4U1sDCrY9QD0Y1-aOIY56YQHTUkJ-nHwM_bKU-nIevKopd6GTLhUGYYQ9NTN79LAxLTNWY5jWU6G4GTF5ZVtyQs79Bd19OPKSiOHSTEV9JHTgzhO8ytWSRU2mc5soLTdqhOBaCgLp5L2a4ahOjTfz6RbgmBnkt7r8FqGEokWv6leedWU9Q",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Paracetamol 500mg\", \r\n    \"description\": \"Pain relief\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/medications",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"medications"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/patients/{1}/medical-records Copy",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIwMTk2YTAyNC1lZTczLTczYjAtYTk4Mi1jZjljYTQzNzRjNGQiLCJqdGkiOiJlYTU1ODEzOWZmZDc4NGNmMmE5MDMzNDNjZjY3YTI2M2YxY2Q5NjllZTBkN2EyN2ZkMDg1OWE0ZjZmNTYwODU2YTJkZTNkNjc1MTQ4M2RkMCIsImlhdCI6MTc0NjQ0NjI0Ni4xNTYyMDcsIm5iZiI6MTc0NjQ0NjI0Ni4xNTYyMDksImV4cCI6MTc3Nzk4MjI0Ni4xNDk1NDQsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.b2MvwI43JqT0BlH5jnJQ5xdM1x_3dcLPzd_LPLhPAiF7t5EV0J9isyacAJilWiysnziVpODmNERQHAN8DY6iXtZ-WFRtgwegb89vAtWLi13opvrTo4me51VoLOkQfPHLyb6i3CPcohv8SiZvOPXfmFTZu-57QZW3iN7CQ9baEa3EyGuJ4F14aGl6Xry98C1i8Dr3titkhaPWSikOglIbXJHt2uSDdO8bhQ_LWUiUeI3nFOrS_c0dl06UAHZMIDluekBe5l0it08yw72REX2q9-vYnaWsL2Bv1a4D2HJ0O9PwuKca_60EHbFF7msIo_LxzT_U4fKXjXvDwE_SAoVFQayXLnB9zThna1UwB0XzLhpTG-Q5HT5DKYFnGv2Hzkt7G16iwpL3IXMr-T8vpYto_54YDSqyH4qRpfdDqwUcPor2f3ajuS25PnXmPqRlEErgVm3fzrL4XsTLKZqQ-cFUulPQTvaE_nmz-K42LgGgLisBh-W65cAZq0M-F4U1sDCrY9QD0Y1-aOIY56YQHTUkJ-nHwM_bKU-nIevKopd6GTLhUGYYQ9NTN79LAxLTNWY5jWU6G4GTF5ZVtyQs79Bd19OPKSiOHSTEV9JHTgzhO8ytWSRU2mc5soLTdqhOBaCgLp5L2a4ahOjTfz6RbgmBnkt7r8FqGEokWv6leedWU9Q",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"diagnosis\": \"Common Cold\",\r\n    \"notes\": \"Patient reports cough and sore throat. Advised rest and fluids.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/patients/{1}/medical-records",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"patients",
+						"{1}",
+						"medical-records"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/prescriptions Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIwMTk2YTAyNC1lZTczLTczYjAtYTk4Mi1jZjljYTQzNzRjNGQiLCJqdGkiOiJkNDkxMDBmZDE1Njk1ZmZjOTE3Zjg3MzlhMTBiZjMzMDdjZDc0YWU0ZThlYTY0NTNiNmQ0N2U0NTZiMjY5ZWMzYjU5MjkzZjU3ZWVkMzJiZSIsImlhdCI6MTc0NjU5MjQ1NS4zOTI4MSwibmJmIjoxNzQ2NTkyNDU1LjM5MjgxMSwiZXhwIjoxNzc4MTI4NDU1LjM4NTM0OCwic3ViIjoiMSIsInNjb3BlcyI6W119.MhlI_wEiZCezcupEE9mXesrYR3j0mKIKrbYW8AO4LNgFnsFQmYOut3xm5Y6N42CRa4aL9yZ97ThQMHNfSe2S355iSVDTXIvkIZ1tTVHsc3im-i_sLiEizXFmCVszCq9Of5gx2Im7fuiV1y3Ev98kVerDln1RwF12qMKkLpONNzoXml2N5zADbqGTB3IUJXLzOZ4vJiRh5PeXdhb4udsGTg4YSljtFgCQD-ROb2j54IKL08BCLXk4sdk_da0Z-dPWyGe09GehNv_j0x78mC0-bs-gqtMw7DHjDxUzlmnF_VxF2QzNRQp2N-izJNPsavrWRXuVJ7IYjSYB2iIBmH9z39xuIyR3zUzbyo9Phwbau7JTmmcyKSoarKD5d7h7pGxkRCZv6VIb9QcLmy_c7ThtlTc4JCpjtP6w4tNGmOaKFdA5DHcZK06_uLtx92zYSYTvgCMzSmc5mFY194LzzV1AsX_Tpphpm8rkhudClG8mia38hrvbkF1Q2uHhlEUvJ3mrukipKX0WgG7b1E9uhaDoQ5klWy6-afMWDAdUbuZYnc-gQQmpi8RWarXsSCX5PiQ5VtxEj7EwfxY56JeRB15n7g0MSlYNKW-8rL5XRVYzH03KN_Bmz_2KZQhuOrWI2VOYJSNFRtmLDhpE88G7dGghSQ2umT4d_7nWb-8oRjvdflA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"patient_id\": 1,\r\n    \"medication_id\": 1,\r\n    \"dosage\": \"Take 1 tablet every 6 hours\",\r\n    \"instructions\": \"Take with water after meals. Do not exceed 4 tablets in 24 hours.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/prescriptions",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"prescriptions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Dr. Matin Jennifer\",\r\n    \"email\": \"martin@example.com\",\r\n    \"password\": \"12345678\",\r\n    \"password_confirmation\": \"12345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": " application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": " application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"martin@example.com\",\r\n    \"password\": \"12345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/patients Copy",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIwMTk2YTkxOS1jOWM3LTcyOGQtYWViNy1hZGQyMGYzODVhMTIiLCJqdGkiOiJjNzBkZGU0NmMyMDM0MzdiNjQ0MmI0Y2FkZDM1NjgyOGE0Nzc4Yzc5ZDgxZDZmY2YxYWQ2N2NlMzQxZmNmN2EzZWQ1Mjc4MWU2N2I1YTcwYyIsImlhdCI6MTc0NjU5Mzc3MC42Mjk5NzYsIm5iZiI6MTc0NjU5Mzc3MC42Mjk5NzcsImV4cCI6MTc3ODEyOTc3MC42MTk5NzgsInN1YiI6IjIiLCJzY29wZXMiOltdfQ.lXWHG1DLwbaRwugUZydCXMxs_CTe6TavkE2NTP040zQTYELprDclcJjKJAx2GvvsKHdClX7F67L7yA7PsySKYj-QF6WZsROQCz9fXYecXHiBqvW2MRkSLAUJhSvfAQmPdgrGRdXju6Ymm4eFirqf4imSrwMwB-paXeBD_QdU4Xfe5RtrFxfAqVYm2V1sTOtUpOYWVBMysaD8fkh8dNB2wSYMLIj_1ivTj17Yce1a3NZOXl8FaM3qIZp-wDcJHLl5ihW-V0tdpg6SozJ4LnzqLk_sp6gXdMdlcYbjROhGehEq8VsRNc71eiT8LGoPGP9gJNRcZutxXnsBpLoD3YnRGZCOVyiK3ZE5AJn7t5pSROAcF4zqmL3Wb3_h_WVmfzTkiNKL0eUZ_MEkBWK7olNebF9fu3J2pCwbV2m5eV8WcxhknDSBtZc3Cv6NNVdnyMRuq6geE2kytnFD2d5LnHA30Q4yry07mKTu4gilaMSJvHyCF1zXvcMsWY207m2x2nCpW7jTA3iEUSV8SknctFxVmQ7CAUz84tyMLUcF1_am25oajSCRrcP-bNLT2R53pwMgXY06QHcb7hwTGYalPfUHjoR-5PAjIwcN6Jp8UCD-o3rFYxd_C3TujErcOie_bu8OMNdjHlqCMIK8WFEAT1hWva6GWm4Dj1xA7omwSJsU8pU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"James Smith\",\r\n    \"dob\": \"1990-05-19\",\r\n    \"contact_info\": \"james.smith@email.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/patients",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"patients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/patients Copy 2",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIwMTk2YTAyNC1lZTczLTczYjAtYTk4Mi1jZjljYTQzNzRjNGQiLCJqdGkiOiJlNjU5NzJjOTE0MjZlZTQyMWVmZWRmYzI5ZmY3YTM3YmE2MjYxMzNiOTIwMDg2NDRjYTA1MjU1ZjE0NWEwN2I1Njg0NjMyMjIwYTJjNjgwZCIsImlhdCI6MTc0NjQ0NDU2Mi41MDg4OTQsIm5iZiI6MTc0NjQ0NDU2Mi41MDg4OTcsImV4cCI6MTc3Nzk4MDU2Mi4zMDg5ODEsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.e2ZAoxK9rSarFpfrnIIYeYWF2A_PHUywIABAWbXBYcpjxsfO-F5YwlF9opfdG6vcFWoPVvceY5W3bGDiiGRK4kNhFOxw1jsYSwuiq_WZ1P4gFsMwtb3TnQR0X9ssQBB7xI2yI5hVrGxGysIkTLqZFOwS5aD8fdbr0_eESOj4cs6lwSAbmEvn_0R8KInlyuXHowch-Z3tVtoowQ9AbMW25EsRI8N9EgKBEXODXJMLF3I-aq65T0-r_yCPg8roN3xagrLoEY5CW8oNIzySA3wgzfR5MEO5YYl8YP8RdE4MX58lmJRQXceC0I1c9soNMchlp9zMrMhanQmUeu3o4t53GzsjJtMUnLIVn6t66ePleLHZpNel-iuPdspyodxGD4zHvOH4CiytBgD5HWeFk-d3l5dXYfcpPhKm9UST__JiA_i1z8WWExVc8UTJBO4jm0NSQVleAwTjOSaUqNFxad375ieHC8aCUPG8_N0rq7nKdPPxrIjTgCMXQwO2fMr6Cyf4UEniTv_q7b1glJsDnT4QBZuO4GsoZ6W11tFaOpmsUt3cU54kT8G8zg6ol8TwOHS9Iou-4N43k7kNSGRYn2NMXiT_skmrhjXjTNo_JxyEMDVRJnCkR14ek1aNaH0eHyDEf8HYwExEwVAQ138zIea2MhkbGMdRzAl1L9DEprv09mU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"John Doe\",\r\n    \"dob\": \"1990-05-15\",\r\n    \"contact_info\": \"john.doe@email.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/patients",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"patients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/medications Copy",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIwMTk2YTAyNC1lZTczLTczYjAtYTk4Mi1jZjljYTQzNzRjNGQiLCJqdGkiOiJlYTU1ODEzOWZmZDc4NGNmMmE5MDMzNDNjZjY3YTI2M2YxY2Q5NjllZTBkN2EyN2ZkMDg1OWE0ZjZmNTYwODU2YTJkZTNkNjc1MTQ4M2RkMCIsImlhdCI6MTc0NjQ0NjI0Ni4xNTYyMDcsIm5iZiI6MTc0NjQ0NjI0Ni4xNTYyMDksImV4cCI6MTc3Nzk4MjI0Ni4xNDk1NDQsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.b2MvwI43JqT0BlH5jnJQ5xdM1x_3dcLPzd_LPLhPAiF7t5EV0J9isyacAJilWiysnziVpODmNERQHAN8DY6iXtZ-WFRtgwegb89vAtWLi13opvrTo4me51VoLOkQfPHLyb6i3CPcohv8SiZvOPXfmFTZu-57QZW3iN7CQ9baEa3EyGuJ4F14aGl6Xry98C1i8Dr3titkhaPWSikOglIbXJHt2uSDdO8bhQ_LWUiUeI3nFOrS_c0dl06UAHZMIDluekBe5l0it08yw72REX2q9-vYnaWsL2Bv1a4D2HJ0O9PwuKca_60EHbFF7msIo_LxzT_U4fKXjXvDwE_SAoVFQayXLnB9zThna1UwB0XzLhpTG-Q5HT5DKYFnGv2Hzkt7G16iwpL3IXMr-T8vpYto_54YDSqyH4qRpfdDqwUcPor2f3ajuS25PnXmPqRlEErgVm3fzrL4XsTLKZqQ-cFUulPQTvaE_nmz-K42LgGgLisBh-W65cAZq0M-F4U1sDCrY9QD0Y1-aOIY56YQHTUkJ-nHwM_bKU-nIevKopd6GTLhUGYYQ9NTN79LAxLTNWY5jWU6G4GTF5ZVtyQs79Bd19OPKSiOHSTEV9JHTgzhO8ytWSRU2mc5soLTdqhOBaCgLp5L2a4ahOjTfz6RbgmBnkt7r8FqGEokWv6leedWU9Q",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Paracetamol 500mg\", \r\n    \"description\": \"Pain relief\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/medications",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"medications"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/medications Copy 2",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIwMTk2YTAyNC1lZTczLTczYjAtYTk4Mi1jZjljYTQzNzRjNGQiLCJqdGkiOiJlYTU1ODEzOWZmZDc4NGNmMmE5MDMzNDNjZjY3YTI2M2YxY2Q5NjllZTBkN2EyN2ZkMDg1OWE0ZjZmNTYwODU2YTJkZTNkNjc1MTQ4M2RkMCIsImlhdCI6MTc0NjQ0NjI0Ni4xNTYyMDcsIm5iZiI6MTc0NjQ0NjI0Ni4xNTYyMDksImV4cCI6MTc3Nzk4MjI0Ni4xNDk1NDQsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.b2MvwI43JqT0BlH5jnJQ5xdM1x_3dcLPzd_LPLhPAiF7t5EV0J9isyacAJilWiysnziVpODmNERQHAN8DY6iXtZ-WFRtgwegb89vAtWLi13opvrTo4me51VoLOkQfPHLyb6i3CPcohv8SiZvOPXfmFTZu-57QZW3iN7CQ9baEa3EyGuJ4F14aGl6Xry98C1i8Dr3titkhaPWSikOglIbXJHt2uSDdO8bhQ_LWUiUeI3nFOrS_c0dl06UAHZMIDluekBe5l0it08yw72REX2q9-vYnaWsL2Bv1a4D2HJ0O9PwuKca_60EHbFF7msIo_LxzT_U4fKXjXvDwE_SAoVFQayXLnB9zThna1UwB0XzLhpTG-Q5HT5DKYFnGv2Hzkt7G16iwpL3IXMr-T8vpYto_54YDSqyH4qRpfdDqwUcPor2f3ajuS25PnXmPqRlEErgVm3fzrL4XsTLKZqQ-cFUulPQTvaE_nmz-K42LgGgLisBh-W65cAZq0M-F4U1sDCrY9QD0Y1-aOIY56YQHTUkJ-nHwM_bKU-nIevKopd6GTLhUGYYQ9NTN79LAxLTNWY5jWU6G4GTF5ZVtyQs79Bd19OPKSiOHSTEV9JHTgzhO8ytWSRU2mc5soLTdqhOBaCgLp5L2a4ahOjTfz6RbgmBnkt7r8FqGEokWv6leedWU9Q",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Paracetamol 500mg\", \r\n    \"description\": \"Pain relief\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/medications",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"medications"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/patients/{1}/medical-records Copy",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIwMTk2YTAyNC1lZTczLTczYjAtYTk4Mi1jZjljYTQzNzRjNGQiLCJqdGkiOiJlYTU1ODEzOWZmZDc4NGNmMmE5MDMzNDNjZjY3YTI2M2YxY2Q5NjllZTBkN2EyN2ZkMDg1OWE0ZjZmNTYwODU2YTJkZTNkNjc1MTQ4M2RkMCIsImlhdCI6MTc0NjQ0NjI0Ni4xNTYyMDcsIm5iZiI6MTc0NjQ0NjI0Ni4xNTYyMDksImV4cCI6MTc3Nzk4MjI0Ni4xNDk1NDQsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.b2MvwI43JqT0BlH5jnJQ5xdM1x_3dcLPzd_LPLhPAiF7t5EV0J9isyacAJilWiysnziVpODmNERQHAN8DY6iXtZ-WFRtgwegb89vAtWLi13opvrTo4me51VoLOkQfPHLyb6i3CPcohv8SiZvOPXfmFTZu-57QZW3iN7CQ9baEa3EyGuJ4F14aGl6Xry98C1i8Dr3titkhaPWSikOglIbXJHt2uSDdO8bhQ_LWUiUeI3nFOrS_c0dl06UAHZMIDluekBe5l0it08yw72REX2q9-vYnaWsL2Bv1a4D2HJ0O9PwuKca_60EHbFF7msIo_LxzT_U4fKXjXvDwE_SAoVFQayXLnB9zThna1UwB0XzLhpTG-Q5HT5DKYFnGv2Hzkt7G16iwpL3IXMr-T8vpYto_54YDSqyH4qRpfdDqwUcPor2f3ajuS25PnXmPqRlEErgVm3fzrL4XsTLKZqQ-cFUulPQTvaE_nmz-K42LgGgLisBh-W65cAZq0M-F4U1sDCrY9QD0Y1-aOIY56YQHTUkJ-nHwM_bKU-nIevKopd6GTLhUGYYQ9NTN79LAxLTNWY5jWU6G4GTF5ZVtyQs79Bd19OPKSiOHSTEV9JHTgzhO8ytWSRU2mc5soLTdqhOBaCgLp5L2a4ahOjTfz6RbgmBnkt7r8FqGEokWv6leedWU9Q",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"diagnosis\": \"Common Cold\",\r\n    \"notes\": \"Patient reports cough and sore throat. Advised rest and fluids.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/patients/{1}/medical-records",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"patients",
+						"{1}",
+						"medical-records"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/patients/{1}/medical-records Copy 2",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIwMTk2YTAyNC1lZTczLTczYjAtYTk4Mi1jZjljYTQzNzRjNGQiLCJqdGkiOiJlYTU1ODEzOWZmZDc4NGNmMmE5MDMzNDNjZjY3YTI2M2YxY2Q5NjllZTBkN2EyN2ZkMDg1OWE0ZjZmNTYwODU2YTJkZTNkNjc1MTQ4M2RkMCIsImlhdCI6MTc0NjQ0NjI0Ni4xNTYyMDcsIm5iZiI6MTc0NjQ0NjI0Ni4xNTYyMDksImV4cCI6MTc3Nzk4MjI0Ni4xNDk1NDQsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.b2MvwI43JqT0BlH5jnJQ5xdM1x_3dcLPzd_LPLhPAiF7t5EV0J9isyacAJilWiysnziVpODmNERQHAN8DY6iXtZ-WFRtgwegb89vAtWLi13opvrTo4me51VoLOkQfPHLyb6i3CPcohv8SiZvOPXfmFTZu-57QZW3iN7CQ9baEa3EyGuJ4F14aGl6Xry98C1i8Dr3titkhaPWSikOglIbXJHt2uSDdO8bhQ_LWUiUeI3nFOrS_c0dl06UAHZMIDluekBe5l0it08yw72REX2q9-vYnaWsL2Bv1a4D2HJ0O9PwuKca_60EHbFF7msIo_LxzT_U4fKXjXvDwE_SAoVFQayXLnB9zThna1UwB0XzLhpTG-Q5HT5DKYFnGv2Hzkt7G16iwpL3IXMr-T8vpYto_54YDSqyH4qRpfdDqwUcPor2f3ajuS25PnXmPqRlEErgVm3fzrL4XsTLKZqQ-cFUulPQTvaE_nmz-K42LgGgLisBh-W65cAZq0M-F4U1sDCrY9QD0Y1-aOIY56YQHTUkJ-nHwM_bKU-nIevKopd6GTLhUGYYQ9NTN79LAxLTNWY5jWU6G4GTF5ZVtyQs79Bd19OPKSiOHSTEV9JHTgzhO8ytWSRU2mc5soLTdqhOBaCgLp5L2a4ahOjTfz6RbgmBnkt7r8FqGEokWv6leedWU9Q",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"diagnosis\": \"Common Cold\",\r\n    \"notes\": \"Patient reports cough and sore throat. Advised rest and fluids.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/patients/{1}/medical-records",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"patients",
+						"{1}",
+						"medical-records"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/prescriptions Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIwMTk2YTAyNC1lZTczLTczYjAtYTk4Mi1jZjljYTQzNzRjNGQiLCJqdGkiOiJkNDkxMDBmZDE1Njk1ZmZjOTE3Zjg3MzlhMTBiZjMzMDdjZDc0YWU0ZThlYTY0NTNiNmQ0N2U0NTZiMjY5ZWMzYjU5MjkzZjU3ZWVkMzJiZSIsImlhdCI6MTc0NjU5MjQ1NS4zOTI4MSwibmJmIjoxNzQ2NTkyNDU1LjM5MjgxMSwiZXhwIjoxNzc4MTI4NDU1LjM4NTM0OCwic3ViIjoiMSIsInNjb3BlcyI6W119.MhlI_wEiZCezcupEE9mXesrYR3j0mKIKrbYW8AO4LNgFnsFQmYOut3xm5Y6N42CRa4aL9yZ97ThQMHNfSe2S355iSVDTXIvkIZ1tTVHsc3im-i_sLiEizXFmCVszCq9Of5gx2Im7fuiV1y3Ev98kVerDln1RwF12qMKkLpONNzoXml2N5zADbqGTB3IUJXLzOZ4vJiRh5PeXdhb4udsGTg4YSljtFgCQD-ROb2j54IKL08BCLXk4sdk_da0Z-dPWyGe09GehNv_j0x78mC0-bs-gqtMw7DHjDxUzlmnF_VxF2QzNRQp2N-izJNPsavrWRXuVJ7IYjSYB2iIBmH9z39xuIyR3zUzbyo9Phwbau7JTmmcyKSoarKD5d7h7pGxkRCZv6VIb9QcLmy_c7ThtlTc4JCpjtP6w4tNGmOaKFdA5DHcZK06_uLtx92zYSYTvgCMzSmc5mFY194LzzV1AsX_Tpphpm8rkhudClG8mia38hrvbkF1Q2uHhlEUvJ3mrukipKX0WgG7b1E9uhaDoQ5klWy6-afMWDAdUbuZYnc-gQQmpi8RWarXsSCX5PiQ5VtxEj7EwfxY56JeRB15n7g0MSlYNKW-8rL5XRVYzH03KN_Bmz_2KZQhuOrWI2VOYJSNFRtmLDhpE88G7dGghSQ2umT4d_7nWb-8oRjvdflA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"patient_id\": 1,\r\n    \"medication_id\": 1,\r\n    \"dosage\": \"Take 1 tablet every 6 hours\",\r\n    \"instructions\": \"Take with water after meals. Do not exceed 4 tablets in 24 hours.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/prescriptions",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"prescriptions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/prescriptions Copy 2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIwMTk2YTAyNC1lZTczLTczYjAtYTk4Mi1jZjljYTQzNzRjNGQiLCJqdGkiOiJkNDkxMDBmZDE1Njk1ZmZjOTE3Zjg3MzlhMTBiZjMzMDdjZDc0YWU0ZThlYTY0NTNiNmQ0N2U0NTZiMjY5ZWMzYjU5MjkzZjU3ZWVkMzJiZSIsImlhdCI6MTc0NjU5MjQ1NS4zOTI4MSwibmJmIjoxNzQ2NTkyNDU1LjM5MjgxMSwiZXhwIjoxNzc4MTI4NDU1LjM4NTM0OCwic3ViIjoiMSIsInNjb3BlcyI6W119.MhlI_wEiZCezcupEE9mXesrYR3j0mKIKrbYW8AO4LNgFnsFQmYOut3xm5Y6N42CRa4aL9yZ97ThQMHNfSe2S355iSVDTXIvkIZ1tTVHsc3im-i_sLiEizXFmCVszCq9Of5gx2Im7fuiV1y3Ev98kVerDln1RwF12qMKkLpONNzoXml2N5zADbqGTB3IUJXLzOZ4vJiRh5PeXdhb4udsGTg4YSljtFgCQD-ROb2j54IKL08BCLXk4sdk_da0Z-dPWyGe09GehNv_j0x78mC0-bs-gqtMw7DHjDxUzlmnF_VxF2QzNRQp2N-izJNPsavrWRXuVJ7IYjSYB2iIBmH9z39xuIyR3zUzbyo9Phwbau7JTmmcyKSoarKD5d7h7pGxkRCZv6VIb9QcLmy_c7ThtlTc4JCpjtP6w4tNGmOaKFdA5DHcZK06_uLtx92zYSYTvgCMzSmc5mFY194LzzV1AsX_Tpphpm8rkhudClG8mia38hrvbkF1Q2uHhlEUvJ3mrukipKX0WgG7b1E9uhaDoQ5klWy6-afMWDAdUbuZYnc-gQQmpi8RWarXsSCX5PiQ5VtxEj7EwfxY56JeRB15n7g0MSlYNKW-8rL5XRVYzH03KN_Bmz_2KZQhuOrWI2VOYJSNFRtmLDhpE88G7dGghSQ2umT4d_7nWb-8oRjvdflA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"patient_id\": 1,\r\n    \"medication_id\": 1,\r\n    \"dosage\": \"Take 1 tablet every 6 hours\",\r\n    \"instructions\": \"Take with water after meals. Do not exceed 4 tablets in 24 hours.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/prescriptions",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"prescriptions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Dr. Matin Jennifer\",\r\n    \"email\": \"martin@example.com\",\r\n    \"password\": \"12345678\",\r\n    \"password_confirmation\": \"12345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": " application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": " application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"alice@example.com\",\r\n    \"password\": \"password\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/patients",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIwMTk2YTAyNC1lZTczLTczYjAtYTk4Mi1jZjljYTQzNzRjNGQiLCJqdGkiOiJlNjU5NzJjOTE0MjZlZTQyMWVmZWRmYzI5ZmY3YTM3YmE2MjYxMzNiOTIwMDg2NDRjYTA1MjU1ZjE0NWEwN2I1Njg0NjMyMjIwYTJjNjgwZCIsImlhdCI6MTc0NjQ0NDU2Mi41MDg4OTQsIm5iZiI6MTc0NjQ0NDU2Mi41MDg4OTcsImV4cCI6MTc3Nzk4MDU2Mi4zMDg5ODEsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.e2ZAoxK9rSarFpfrnIIYeYWF2A_PHUywIABAWbXBYcpjxsfO-F5YwlF9opfdG6vcFWoPVvceY5W3bGDiiGRK4kNhFOxw1jsYSwuiq_WZ1P4gFsMwtb3TnQR0X9ssQBB7xI2yI5hVrGxGysIkTLqZFOwS5aD8fdbr0_eESOj4cs6lwSAbmEvn_0R8KInlyuXHowch-Z3tVtoowQ9AbMW25EsRI8N9EgKBEXODXJMLF3I-aq65T0-r_yCPg8roN3xagrLoEY5CW8oNIzySA3wgzfR5MEO5YYl8YP8RdE4MX58lmJRQXceC0I1c9soNMchlp9zMrMhanQmUeu3o4t53GzsjJtMUnLIVn6t66ePleLHZpNel-iuPdspyodxGD4zHvOH4CiytBgD5HWeFk-d3l5dXYfcpPhKm9UST__JiA_i1z8WWExVc8UTJBO4jm0NSQVleAwTjOSaUqNFxad375ieHC8aCUPG8_N0rq7nKdPPxrIjTgCMXQwO2fMr6Cyf4UEniTv_q7b1glJsDnT4QBZuO4GsoZ6W11tFaOpmsUt3cU54kT8G8zg6ol8TwOHS9Iou-4N43k7kNSGRYn2NMXiT_skmrhjXjTNo_JxyEMDVRJnCkR14ek1aNaH0eHyDEf8HYwExEwVAQ138zIea2MhkbGMdRzAl1L9DEprv09mU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"John Doe\",\r\n    \"dob\": \"1990-05-15\",\r\n    \"contact_info\": \"john.doe@email.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/patients",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"patients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/medications",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIwMTk2YTAyNC1lZTczLTczYjAtYTk4Mi1jZjljYTQzNzRjNGQiLCJqdGkiOiJlYTU1ODEzOWZmZDc4NGNmMmE5MDMzNDNjZjY3YTI2M2YxY2Q5NjllZTBkN2EyN2ZkMDg1OWE0ZjZmNTYwODU2YTJkZTNkNjc1MTQ4M2RkMCIsImlhdCI6MTc0NjQ0NjI0Ni4xNTYyMDcsIm5iZiI6MTc0NjQ0NjI0Ni4xNTYyMDksImV4cCI6MTc3Nzk4MjI0Ni4xNDk1NDQsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.b2MvwI43JqT0BlH5jnJQ5xdM1x_3dcLPzd_LPLhPAiF7t5EV0J9isyacAJilWiysnziVpODmNERQHAN8DY6iXtZ-WFRtgwegb89vAtWLi13opvrTo4me51VoLOkQfPHLyb6i3CPcohv8SiZvOPXfmFTZu-57QZW3iN7CQ9baEa3EyGuJ4F14aGl6Xry98C1i8Dr3titkhaPWSikOglIbXJHt2uSDdO8bhQ_LWUiUeI3nFOrS_c0dl06UAHZMIDluekBe5l0it08yw72REX2q9-vYnaWsL2Bv1a4D2HJ0O9PwuKca_60EHbFF7msIo_LxzT_U4fKXjXvDwE_SAoVFQayXLnB9zThna1UwB0XzLhpTG-Q5HT5DKYFnGv2Hzkt7G16iwpL3IXMr-T8vpYto_54YDSqyH4qRpfdDqwUcPor2f3ajuS25PnXmPqRlEErgVm3fzrL4XsTLKZqQ-cFUulPQTvaE_nmz-K42LgGgLisBh-W65cAZq0M-F4U1sDCrY9QD0Y1-aOIY56YQHTUkJ-nHwM_bKU-nIevKopd6GTLhUGYYQ9NTN79LAxLTNWY5jWU6G4GTF5ZVtyQs79Bd19OPKSiOHSTEV9JHTgzhO8ytWSRU2mc5soLTdqhOBaCgLp5L2a4ahOjTfz6RbgmBnkt7r8FqGEokWv6leedWU9Q",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Paracetamol 500mg\", \r\n    \"description\": \"Pain relief\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/medications",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"medications"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/patients/{1}/medical-records",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIwMTk2YTAyNC1lZTczLTczYjAtYTk4Mi1jZjljYTQzNzRjNGQiLCJqdGkiOiJlYTU1ODEzOWZmZDc4NGNmMmE5MDMzNDNjZjY3YTI2M2YxY2Q5NjllZTBkN2EyN2ZkMDg1OWE0ZjZmNTYwODU2YTJkZTNkNjc1MTQ4M2RkMCIsImlhdCI6MTc0NjQ0NjI0Ni4xNTYyMDcsIm5iZiI6MTc0NjQ0NjI0Ni4xNTYyMDksImV4cCI6MTc3Nzk4MjI0Ni4xNDk1NDQsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.b2MvwI43JqT0BlH5jnJQ5xdM1x_3dcLPzd_LPLhPAiF7t5EV0J9isyacAJilWiysnziVpODmNERQHAN8DY6iXtZ-WFRtgwegb89vAtWLi13opvrTo4me51VoLOkQfPHLyb6i3CPcohv8SiZvOPXfmFTZu-57QZW3iN7CQ9baEa3EyGuJ4F14aGl6Xry98C1i8Dr3titkhaPWSikOglIbXJHt2uSDdO8bhQ_LWUiUeI3nFOrS_c0dl06UAHZMIDluekBe5l0it08yw72REX2q9-vYnaWsL2Bv1a4D2HJ0O9PwuKca_60EHbFF7msIo_LxzT_U4fKXjXvDwE_SAoVFQayXLnB9zThna1UwB0XzLhpTG-Q5HT5DKYFnGv2Hzkt7G16iwpL3IXMr-T8vpYto_54YDSqyH4qRpfdDqwUcPor2f3ajuS25PnXmPqRlEErgVm3fzrL4XsTLKZqQ-cFUulPQTvaE_nmz-K42LgGgLisBh-W65cAZq0M-F4U1sDCrY9QD0Y1-aOIY56YQHTUkJ-nHwM_bKU-nIevKopd6GTLhUGYYQ9NTN79LAxLTNWY5jWU6G4GTF5ZVtyQs79Bd19OPKSiOHSTEV9JHTgzhO8ytWSRU2mc5soLTdqhOBaCgLp5L2a4ahOjTfz6RbgmBnkt7r8FqGEokWv6leedWU9Q",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"diagnosis\": \"Common Cold\",\r\n    \"notes\": \"Patient reports cough and sore throat. Advised rest and fluids.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/patients/{1}/medical-records",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"patients",
+						"{1}",
+						"medical-records"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/prescriptions",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIwMTk2YTAyNC1lZTczLTczYjAtYTk4Mi1jZjljYTQzNzRjNGQiLCJqdGkiOiJkNDkxMDBmZDE1Njk1ZmZjOTE3Zjg3MzlhMTBiZjMzMDdjZDc0YWU0ZThlYTY0NTNiNmQ0N2U0NTZiMjY5ZWMzYjU5MjkzZjU3ZWVkMzJiZSIsImlhdCI6MTc0NjU5MjQ1NS4zOTI4MSwibmJmIjoxNzQ2NTkyNDU1LjM5MjgxMSwiZXhwIjoxNzc4MTI4NDU1LjM4NTM0OCwic3ViIjoiMSIsInNjb3BlcyI6W119.MhlI_wEiZCezcupEE9mXesrYR3j0mKIKrbYW8AO4LNgFnsFQmYOut3xm5Y6N42CRa4aL9yZ97ThQMHNfSe2S355iSVDTXIvkIZ1tTVHsc3im-i_sLiEizXFmCVszCq9Of5gx2Im7fuiV1y3Ev98kVerDln1RwF12qMKkLpONNzoXml2N5zADbqGTB3IUJXLzOZ4vJiRh5PeXdhb4udsGTg4YSljtFgCQD-ROb2j54IKL08BCLXk4sdk_da0Z-dPWyGe09GehNv_j0x78mC0-bs-gqtMw7DHjDxUzlmnF_VxF2QzNRQp2N-izJNPsavrWRXuVJ7IYjSYB2iIBmH9z39xuIyR3zUzbyo9Phwbau7JTmmcyKSoarKD5d7h7pGxkRCZv6VIb9QcLmy_c7ThtlTc4JCpjtP6w4tNGmOaKFdA5DHcZK06_uLtx92zYSYTvgCMzSmc5mFY194LzzV1AsX_Tpphpm8rkhudClG8mia38hrvbkF1Q2uHhlEUvJ3mrukipKX0WgG7b1E9uhaDoQ5klWy6-afMWDAdUbuZYnc-gQQmpi8RWarXsSCX5PiQ5VtxEj7EwfxY56JeRB15n7g0MSlYNKW-8rL5XRVYzH03KN_Bmz_2KZQhuOrWI2VOYJSNFRtmLDhpE88G7dGghSQ2umT4d_7nWb-8oRjvdflA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"patient_id\": 1,\r\n    \"medication_id\": 1,\r\n    \"dosage\": \"Take 1 tablet every 6 hours\",\r\n    \"instructions\": \"Take with water after meals. Do not exceed 4 tablets in 24 hours.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/prescriptions",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"prescriptions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/patients Copy 2",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIwMTk2YTkxOS1jOWM3LTcyOGQtYWViNy1hZGQyMGYzODVhMTIiLCJqdGkiOiJjNzBkZGU0NmMyMDM0MzdiNjQ0MmI0Y2FkZDM1NjgyOGE0Nzc4Yzc5ZDgxZDZmY2YxYWQ2N2NlMzQxZmNmN2EzZWQ1Mjc4MWU2N2I1YTcwYyIsImlhdCI6MTc0NjU5Mzc3MC42Mjk5NzYsIm5iZiI6MTc0NjU5Mzc3MC42Mjk5NzcsImV4cCI6MTc3ODEyOTc3MC42MTk5NzgsInN1YiI6IjIiLCJzY29wZXMiOltdfQ.lXWHG1DLwbaRwugUZydCXMxs_CTe6TavkE2NTP040zQTYELprDclcJjKJAx2GvvsKHdClX7F67L7yA7PsySKYj-QF6WZsROQCz9fXYecXHiBqvW2MRkSLAUJhSvfAQmPdgrGRdXju6Ymm4eFirqf4imSrwMwB-paXeBD_QdU4Xfe5RtrFxfAqVYm2V1sTOtUpOYWVBMysaD8fkh8dNB2wSYMLIj_1ivTj17Yce1a3NZOXl8FaM3qIZp-wDcJHLl5ihW-V0tdpg6SozJ4LnzqLk_sp6gXdMdlcYbjROhGehEq8VsRNc71eiT8LGoPGP9gJNRcZutxXnsBpLoD3YnRGZCOVyiK3ZE5AJn7t5pSROAcF4zqmL3Wb3_h_WVmfzTkiNKL0eUZ_MEkBWK7olNebF9fu3J2pCwbV2m5eV8WcxhknDSBtZc3Cv6NNVdnyMRuq6geE2kytnFD2d5LnHA30Q4yry07mKTu4gilaMSJvHyCF1zXvcMsWY207m2x2nCpW7jTA3iEUSV8SknctFxVmQ7CAUz84tyMLUcF1_am25oajSCRrcP-bNLT2R53pwMgXY06QHcb7hwTGYalPfUHjoR-5PAjIwcN6Jp8UCD-o3rFYxd_C3TujErcOie_bu8OMNdjHlqCMIK8WFEAT1hWva6GWm4Dj1xA7omwSJsU8pU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"James Smith\",\r\n    \"dob\": \"1990-05-19\",\r\n    \"contact_info\": \"james.smith@email.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/patients",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"patients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/patients Copy 3",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIwMTk2YTAyNC1lZTczLTczYjAtYTk4Mi1jZjljYTQzNzRjNGQiLCJqdGkiOiJlNjU5NzJjOTE0MjZlZTQyMWVmZWRmYzI5ZmY3YTM3YmE2MjYxMzNiOTIwMDg2NDRjYTA1MjU1ZjE0NWEwN2I1Njg0NjMyMjIwYTJjNjgwZCIsImlhdCI6MTc0NjQ0NDU2Mi41MDg4OTQsIm5iZiI6MTc0NjQ0NDU2Mi41MDg4OTcsImV4cCI6MTc3Nzk4MDU2Mi4zMDg5ODEsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.e2ZAoxK9rSarFpfrnIIYeYWF2A_PHUywIABAWbXBYcpjxsfO-F5YwlF9opfdG6vcFWoPVvceY5W3bGDiiGRK4kNhFOxw1jsYSwuiq_WZ1P4gFsMwtb3TnQR0X9ssQBB7xI2yI5hVrGxGysIkTLqZFOwS5aD8fdbr0_eESOj4cs6lwSAbmEvn_0R8KInlyuXHowch-Z3tVtoowQ9AbMW25EsRI8N9EgKBEXODXJMLF3I-aq65T0-r_yCPg8roN3xagrLoEY5CW8oNIzySA3wgzfR5MEO5YYl8YP8RdE4MX58lmJRQXceC0I1c9soNMchlp9zMrMhanQmUeu3o4t53GzsjJtMUnLIVn6t66ePleLHZpNel-iuPdspyodxGD4zHvOH4CiytBgD5HWeFk-d3l5dXYfcpPhKm9UST__JiA_i1z8WWExVc8UTJBO4jm0NSQVleAwTjOSaUqNFxad375ieHC8aCUPG8_N0rq7nKdPPxrIjTgCMXQwO2fMr6Cyf4UEniTv_q7b1glJsDnT4QBZuO4GsoZ6W11tFaOpmsUt3cU54kT8G8zg6ol8TwOHS9Iou-4N43k7kNSGRYn2NMXiT_skmrhjXjTNo_JxyEMDVRJnCkR14ek1aNaH0eHyDEf8HYwExEwVAQ138zIea2MhkbGMdRzAl1L9DEprv09mU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"John Doe\",\r\n    \"dob\": \"1990-05-15\",\r\n    \"contact_info\": \"john.doe@email.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/patients",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"patients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/medications Copy 2",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIwMTk2YTAyNC1lZTczLTczYjAtYTk4Mi1jZjljYTQzNzRjNGQiLCJqdGkiOiJlYTU1ODEzOWZmZDc4NGNmMmE5MDMzNDNjZjY3YTI2M2YxY2Q5NjllZTBkN2EyN2ZkMDg1OWE0ZjZmNTYwODU2YTJkZTNkNjc1MTQ4M2RkMCIsImlhdCI6MTc0NjQ0NjI0Ni4xNTYyMDcsIm5iZiI6MTc0NjQ0NjI0Ni4xNTYyMDksImV4cCI6MTc3Nzk4MjI0Ni4xNDk1NDQsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.b2MvwI43JqT0BlH5jnJQ5xdM1x_3dcLPzd_LPLhPAiF7t5EV0J9isyacAJilWiysnziVpODmNERQHAN8DY6iXtZ-WFRtgwegb89vAtWLi13opvrTo4me51VoLOkQfPHLyb6i3CPcohv8SiZvOPXfmFTZu-57QZW3iN7CQ9baEa3EyGuJ4F14aGl6Xry98C1i8Dr3titkhaPWSikOglIbXJHt2uSDdO8bhQ_LWUiUeI3nFOrS_c0dl06UAHZMIDluekBe5l0it08yw72REX2q9-vYnaWsL2Bv1a4D2HJ0O9PwuKca_60EHbFF7msIo_LxzT_U4fKXjXvDwE_SAoVFQayXLnB9zThna1UwB0XzLhpTG-Q5HT5DKYFnGv2Hzkt7G16iwpL3IXMr-T8vpYto_54YDSqyH4qRpfdDqwUcPor2f3ajuS25PnXmPqRlEErgVm3fzrL4XsTLKZqQ-cFUulPQTvaE_nmz-K42LgGgLisBh-W65cAZq0M-F4U1sDCrY9QD0Y1-aOIY56YQHTUkJ-nHwM_bKU-nIevKopd6GTLhUGYYQ9NTN79LAxLTNWY5jWU6G4GTF5ZVtyQs79Bd19OPKSiOHSTEV9JHTgzhO8ytWSRU2mc5soLTdqhOBaCgLp5L2a4ahOjTfz6RbgmBnkt7r8FqGEokWv6leedWU9Q",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Paracetamol 500mg\", \r\n    \"description\": \"Pain relief\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/medications",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"medications"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/medications Copy 3",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIwMTk2YTAyNC1lZTczLTczYjAtYTk4Mi1jZjljYTQzNzRjNGQiLCJqdGkiOiJlYTU1ODEzOWZmZDc4NGNmMmE5MDMzNDNjZjY3YTI2M2YxY2Q5NjllZTBkN2EyN2ZkMDg1OWE0ZjZmNTYwODU2YTJkZTNkNjc1MTQ4M2RkMCIsImlhdCI6MTc0NjQ0NjI0Ni4xNTYyMDcsIm5iZiI6MTc0NjQ0NjI0Ni4xNTYyMDksImV4cCI6MTc3Nzk4MjI0Ni4xNDk1NDQsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.b2MvwI43JqT0BlH5jnJQ5xdM1x_3dcLPzd_LPLhPAiF7t5EV0J9isyacAJilWiysnziVpODmNERQHAN8DY6iXtZ-WFRtgwegb89vAtWLi13opvrTo4me51VoLOkQfPHLyb6i3CPcohv8SiZvOPXfmFTZu-57QZW3iN7CQ9baEa3EyGuJ4F14aGl6Xry98C1i8Dr3titkhaPWSikOglIbXJHt2uSDdO8bhQ_LWUiUeI3nFOrS_c0dl06UAHZMIDluekBe5l0it08yw72REX2q9-vYnaWsL2Bv1a4D2HJ0O9PwuKca_60EHbFF7msIo_LxzT_U4fKXjXvDwE_SAoVFQayXLnB9zThna1UwB0XzLhpTG-Q5HT5DKYFnGv2Hzkt7G16iwpL3IXMr-T8vpYto_54YDSqyH4qRpfdDqwUcPor2f3ajuS25PnXmPqRlEErgVm3fzrL4XsTLKZqQ-cFUulPQTvaE_nmz-K42LgGgLisBh-W65cAZq0M-F4U1sDCrY9QD0Y1-aOIY56YQHTUkJ-nHwM_bKU-nIevKopd6GTLhUGYYQ9NTN79LAxLTNWY5jWU6G4GTF5ZVtyQs79Bd19OPKSiOHSTEV9JHTgzhO8ytWSRU2mc5soLTdqhOBaCgLp5L2a4ahOjTfz6RbgmBnkt7r8FqGEokWv6leedWU9Q",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Paracetamol 500mg\", \r\n    \"description\": \"Pain relief\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/medications",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"medications"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/patients/{1}/medical-records Copy 2",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIwMTk2YTAyNC1lZTczLTczYjAtYTk4Mi1jZjljYTQzNzRjNGQiLCJqdGkiOiJlYTU1ODEzOWZmZDc4NGNmMmE5MDMzNDNjZjY3YTI2M2YxY2Q5NjllZTBkN2EyN2ZkMDg1OWE0ZjZmNTYwODU2YTJkZTNkNjc1MTQ4M2RkMCIsImlhdCI6MTc0NjQ0NjI0Ni4xNTYyMDcsIm5iZiI6MTc0NjQ0NjI0Ni4xNTYyMDksImV4cCI6MTc3Nzk4MjI0Ni4xNDk1NDQsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.b2MvwI43JqT0BlH5jnJQ5xdM1x_3dcLPzd_LPLhPAiF7t5EV0J9isyacAJilWiysnziVpODmNERQHAN8DY6iXtZ-WFRtgwegb89vAtWLi13opvrTo4me51VoLOkQfPHLyb6i3CPcohv8SiZvOPXfmFTZu-57QZW3iN7CQ9baEa3EyGuJ4F14aGl6Xry98C1i8Dr3titkhaPWSikOglIbXJHt2uSDdO8bhQ_LWUiUeI3nFOrS_c0dl06UAHZMIDluekBe5l0it08yw72REX2q9-vYnaWsL2Bv1a4D2HJ0O9PwuKca_60EHbFF7msIo_LxzT_U4fKXjXvDwE_SAoVFQayXLnB9zThna1UwB0XzLhpTG-Q5HT5DKYFnGv2Hzkt7G16iwpL3IXMr-T8vpYto_54YDSqyH4qRpfdDqwUcPor2f3ajuS25PnXmPqRlEErgVm3fzrL4XsTLKZqQ-cFUulPQTvaE_nmz-K42LgGgLisBh-W65cAZq0M-F4U1sDCrY9QD0Y1-aOIY56YQHTUkJ-nHwM_bKU-nIevKopd6GTLhUGYYQ9NTN79LAxLTNWY5jWU6G4GTF5ZVtyQs79Bd19OPKSiOHSTEV9JHTgzhO8ytWSRU2mc5soLTdqhOBaCgLp5L2a4ahOjTfz6RbgmBnkt7r8FqGEokWv6leedWU9Q",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"diagnosis\": \"Common Cold\",\r\n    \"notes\": \"Patient reports cough and sore throat. Advised rest and fluids.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/patients/{1}/medical-records",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"patients",
+						"{1}",
+						"medical-records"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/prescriptions Copy 2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIwMTk2YTAyNC1lZTczLTczYjAtYTk4Mi1jZjljYTQzNzRjNGQiLCJqdGkiOiJkNDkxMDBmZDE1Njk1ZmZjOTE3Zjg3MzlhMTBiZjMzMDdjZDc0YWU0ZThlYTY0NTNiNmQ0N2U0NTZiMjY5ZWMzYjU5MjkzZjU3ZWVkMzJiZSIsImlhdCI6MTc0NjU5MjQ1NS4zOTI4MSwibmJmIjoxNzQ2NTkyNDU1LjM5MjgxMSwiZXhwIjoxNzc4MTI4NDU1LjM4NTM0OCwic3ViIjoiMSIsInNjb3BlcyI6W119.MhlI_wEiZCezcupEE9mXesrYR3j0mKIKrbYW8AO4LNgFnsFQmYOut3xm5Y6N42CRa4aL9yZ97ThQMHNfSe2S355iSVDTXIvkIZ1tTVHsc3im-i_sLiEizXFmCVszCq9Of5gx2Im7fuiV1y3Ev98kVerDln1RwF12qMKkLpONNzoXml2N5zADbqGTB3IUJXLzOZ4vJiRh5PeXdhb4udsGTg4YSljtFgCQD-ROb2j54IKL08BCLXk4sdk_da0Z-dPWyGe09GehNv_j0x78mC0-bs-gqtMw7DHjDxUzlmnF_VxF2QzNRQp2N-izJNPsavrWRXuVJ7IYjSYB2iIBmH9z39xuIyR3zUzbyo9Phwbau7JTmmcyKSoarKD5d7h7pGxkRCZv6VIb9QcLmy_c7ThtlTc4JCpjtP6w4tNGmOaKFdA5DHcZK06_uLtx92zYSYTvgCMzSmc5mFY194LzzV1AsX_Tpphpm8rkhudClG8mia38hrvbkF1Q2uHhlEUvJ3mrukipKX0WgG7b1E9uhaDoQ5klWy6-afMWDAdUbuZYnc-gQQmpi8RWarXsSCX5PiQ5VtxEj7EwfxY56JeRB15n7g0MSlYNKW-8rL5XRVYzH03KN_Bmz_2KZQhuOrWI2VOYJSNFRtmLDhpE88G7dGghSQ2umT4d_7nWb-8oRjvdflA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"patient_id\": 1,\r\n    \"medication_id\": 1,\r\n    \"dosage\": \"Take 1 tablet every 6 hours\",\r\n    \"instructions\": \"Take with water after meals. Do not exceed 4 tablets in 24 hours.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/prescriptions",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"prescriptions"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
